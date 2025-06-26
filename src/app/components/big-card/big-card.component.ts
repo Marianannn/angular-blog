@@ -7,14 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  @Input()
-  photoCover:string =""
-  @Input()
-  cardTitle:string= ""
-  @Input()
-  cardDescription:string =""
-  @Input()
-  Id:string="0"
+    // @Input()
+    // photoCover:string =""
+    // @Input()
+    // cardTitle:string= ""
+    // @Input()
+    // cardDescription:string =""
+    // @Input()
+    // Id:string="0"
+
+  @Input() bigCard!: {
+    id: string;
+    photoCover: string;
+    title: string;
+    description: string;
+  };
+
 
   constructor() { }
 

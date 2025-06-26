@@ -1,0 +1,16 @@
+<div>
+    <div class="container__carrousel">
+        <div (click)="previous()">
+            <i (click)="previous()" class="fa-solid fa-arrow-left"></i>
+        </div>
+        <app-menu-banner
+        [id]="banner.id"
+        [bannerImage]="banner.photoCover"
+        [bannerTitle]="banner.title">
+        </app-menu-banner>
+        <div (click)="next()">
+            <i (click)="next()" class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <hr />
+</div>

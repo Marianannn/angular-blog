@@ -32,5 +32,4 @@ export class ContentComponent implements OnInit {
     this.contentDescription = result.description
     this.photoCover = result.photoCover
   }
-
 }
